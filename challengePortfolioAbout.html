@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("home");
+        let mybutton1 = document.getElementById("work");
+
+
+
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            window.location.href = "file:///C:/Users/Administrator.JTSV-20151008DN/Downloads/animetion/challengePortfolio.html"
+        }
+        function midFunction() {
+            window.location.href = "file:///C:/Users/Administrator.JTSV-20151008DN/Downloads/animetion/challengePortfolio.html"
+
+
+        }
+
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .blank {
+            border-bottom: 2px solid gainsboro;
+            margin-left: 100px;
+            margin-right: 100px;
+            min-width: 1000px;
+        }
+
+        @keyframes test {
+            from {
+                opacity: 0%;
+            }
+
+            to {
+                opacity: 100%;
+            }
+        }
+
+        .p1 {
+            display: flex;
+
+            width: 98vw;
+            height: 80px;
+            background-color: white;
+            z-index: 99;
+            position: fixed !important;
+
+        }
+
+        .p1-1 {
+            display: inline-flex;
+            padding-left: 100px;
+            flex: 1;
+        }
+
+        .p1-1>h1 {
+            margin: 0;
+            align-self: center;
+            min-width: 700px;
+        }
+
+        .p1-1>.cercle {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            margin-right: 10px;
+            align-self: center;
+            border: none;
+            background-color: blueviolet;
+        }
+
+        .p1-1>.cercle:hover {
+            width: 20px;
+            height: 20px;
+            align-self: center;
+            border-radius: 0;
+            border: none;
+            background-color: black;
+
+        }
+
+        .p1-2 {
+            display: inline-flex;
+            align-content: center;
+            flex: 1;
+            justify-content: flex-end;
+            padding-right: 100px;
+        }
+
+        .p1-2>h3,
+        .p1-2>.work {
+            padding-left: 15px;
+            padding-right: 15px;
+            align-self: center;
+
+        }
+
+        .p1-2>.work {
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 1px;
+            color: black;
+        }
+
+        .p1-2>h3:nth-of-type(1) {
+            color: blueviolet;
+        }
+
+        #home,
+        #work {
+            cursor: pointer;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .p2 {
+            width: 100%;
+            min-width: 1300px;
+            height: 500px;
+            display: flex;
+            padding-top: 150px;
+
+        }
+
+        .p2-1 {
+            display: flex;
+
+            flex: 1;
+            margin-left: 100px;
+        }
+
+        .rectangle {
+            margin-top: 31px;
+            padding-left: 15px;
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: black;
+            border: none;
+            animation-name: test;
+            animation-duration: 1.5s;
+        }
+
+        .detail {
+            animation-name: test;
+            animation-duration: 1.5s;
+        }
+
+        .detail>h1:nth-of-type(1) {
+            margin-bottom: 5px;
+        }
+
+        .detail>h1:nth-of-type(2) {
+            margin-top: 0;
+        }
+
+        .p2-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            flex: 1;
+            margin-right: 100px;
+
+        }
+
+        .hobbies {
+            padding-left: 10px;
+            animation-name: test;
+            animation-duration: 1.5s;
+        }
+
+        .p5 {
+
+            min-width: 1300px;
+            width: 98vw;
+            height: 200px;
+        }
+
+        .p5-1 {
+            display: flex;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .p5-1>button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            margin-right: 10px;
+            background-color: black;
+            align-self: center;
+        }
+
+        .p5-2 {
+            display: flex;
+            padding-left: 120px;
+            padding-right: 100px;
+        }
+
+        .p5-2>button {
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p1">
+        <div class="p1-1">
+            <button class="cercle"></button>
+            <h1>Arkkee Paweena-anupun</h1>
+        </div>
+
+        <div class="p1-2">
+            <h3 onclick="topFunction()" id="home">HOME</h3>
+            <a class="work"
+                href="file:///C:/Users/Administrator.JTSV-20151008DN/Downloads/animetion/challengePortfolio.html#work"><b>WORK</b></a>
+            <h3>ABOUT</h3>
+
+        </div>
+    </div>
+
+    <div class="p2">
+        <div class="p2-1">
+            <button class="rectangle"></button>
+            <div class="detail">
+                <h1>I'm Arkkee ,</h1>
+                <h1>A student at the Westride.</h1>
+                <p>Hello!,I'm 28 years old. I live in Bangkok. I like writing code. I have experience writing java
+                    language. I expect to be a website developer.
+                </p>
+
+
+            </div>
+        </div>
+
+        <div class="p2-2">
+
+            <div class="hobbies">
+                <h2>My hobbies</h2>
+                <p>Street workout</p>
+                <p>riding motorcycle</p>
+                <p>reading book</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="blank"></div>
+
+    <div class="p5">
+        <div class="p5-1">
+            <button></button>
+            <h1> Contact </h1>
+        </div>
+        <div class="p5-2">
+            <button class="instagram">instagram</button>
+            <button class="facebook">facebook</button>
+            <button class="email">email</button>
+            <button class="resume">resume</button>
+        </div>
+    </div>
+</body>
+
+</html>
